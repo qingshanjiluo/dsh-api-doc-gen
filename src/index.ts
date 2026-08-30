@@ -1,3 +1,15 @@
+/**
+ * dsh-api-doc-gen — API文档生成器
+ *
+ * 功能：
+ * 1. 路由扫描
+ * 2. OpenAPI生成
+ * 3. Markdown文档
+ *
+ * 工具：api_doc_scan, api_doc_generate, api_doc_preview
+ * 命令：/apidoc
+ * 配置：enabled
+ */
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { resolve, join, extname } from 'node:path';
 import { z } from 'zod';
